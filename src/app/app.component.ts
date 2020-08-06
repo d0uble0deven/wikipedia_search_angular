@@ -16,9 +16,9 @@ export class AppComponent {
     // console.log('I am the app and here is the term', term)
     // const results = this.wikipedia.search(term)
 
-    this.wikipedia.search(term).subscribe((response: any) => {
+    this.wikipedia.search(term).subscribe((response) => {
       console.log(response)
-      this.pages = response.query.search
+      this.pages = response
 
     })
   }
